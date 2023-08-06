@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plank is cool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: Bitter;
+    }
+
+    .container {
+      margin: 30px auto;
+      background-color: #f1f1f1;
+      background-image: linear-gradient(140deg, #f1f1f1 20%, #CA85CC 80%);
+      width: 50%;
+      padding: 40px;
+      border-radius: 10px;
+      line-height: 2;
+    }
+
+    h1 {
+      margin: 10px;
+      color: #6C2165;
+      font-size: 50px;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .more-link {
+      display: block;
+      color: #6C2165;
+      margin: 20px 0;
+    }
+
+    a {
+      color: #6C2165;
+    }
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #893684;
+      border-radius: 10px;
+      border: 1px solid #893684;
+      color: #f1f1f1;
+      padding: 20px 30px;
+      margin: 30px auto;
+      display: block;
+      font-size: 50px;
+      font-family: Bitter;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      box-shadow: 0 1px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    button:hover {
+      background-color: #f1f1f1;
+      color: #C982CC;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      Plank is cool
+    </h1>
+    <hr>
+    <h2>
+      Plank is also healthy
+    </h2>
+    <img
+      src="plank.png"
+      alt="plank pose">
+    <p>
+      <strong>The plank</strong> (also called a front hold, hover, or abdominal bridge) is an isometric core strength
+      exercise that involves maintaining a position similar to a push-up for the maximum possible time.
+      <br>
+      The plank is commonly practiced in <em>Pilates</em> and <em>yoga</em>, and by those training for boxing and other
+      sports.
+      <br>
+      The plank strengthens the abdominals, back and shoulders.
+    </p>
+    <small>
+      <a href="https://en.wikipedia.org/wiki/Plank_(exercise)" target="_blank" class="more-link">Read more</a>
+    </small>
+    <span>How to plank? Watch <a href="https://www.youtube.com/watch?v=BQu26ABuVS0" target="_blank">here</a></span>
+    <button>Try plank yorself</button>
+  </div>
+  <script>
+
+    function letsDoPlank() {
+      let name = prompt("What is your name?");
+
+      if (name.length) {
+        alert(`Ok, ${name}! Let's start from 20 seconds. Ready! Steady! Go!`)
+      } else {
+        alert("Ok, stranger! Let's give it a try!")
+      }
+    }
+    let button = document.querySelector("button");
+    button.addEventListener("click", letsDoPlank)
+  </script>
+</body>
+
+</html>
